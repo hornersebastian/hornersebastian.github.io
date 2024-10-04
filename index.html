@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,12 +54,28 @@
 
         .details {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 10px auto;
             padding: 40px;
             background-color: #00a088;
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+
+        section.details img {
+            width: 100%;
+            /* Bild nimmt die volle Breite des Containers */
+            max-width: 400px;
+            /* Maximale Breite des Bildes */
+            height: auto;
+            /* Erhält die Bildproportionen */
+            object-fit: contain;
+            /* Stellt sicher, dass das Bild in den Container passt */
+            margin: 0 auto;
+            /* Zentriert das Bild */
+            display: block;
+            /* Bild blockieren, um das Margin zu zentrieren */
+        }
+
 
         .details h2 {
             text-align: center;
@@ -91,44 +108,60 @@
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Dienstplaner SA</h1>
-</header>
+    <header>
+        <h1>Dienstplaner SA</h1>
+    </header>
 
-<section class="description">
-    <p>Der Dienstplaner wird in Zukunft die Einteilung, der Dienste bei der Rodelplan auf der Staoninger Alm übernehmen</p>
-    
-    <!-- Technologie Icons -->
-    <div class="technologies">
-        <img src="visual_studio_code.png" alt="Visual Studio Code Icon">
-        <img src="electron.png" alt="Electron Icon">
-        <img src="gitlab.png" alt="GitLab Icon">
-        <img src="typescript-icon.svg" alt="Typescript Icon">
-    </div>
-    <img src="orig_cut-out.png" alt="Dienstplaner Logo" style="width:50%; margin: 20px 0;">
-</section>
+    <section class="description">
+        <p>Der Dienstplaner ist die Zukunft bei der Einteilung der Dienste bei der Rodelbahn auf der Stoaninger Alm</p>
+        <img src="orig_cut-out.png" alt="Dienstplaner Logo" style="width:50%; margin: 20px 0;">
+    </section>
 
+    <section class="details">
+        <h2>Weitere Details</h2>
+        <p>Um die Einteilung der Dienste bei der Rodelbahn nicht mehr mühsam und fehleranfällig per Hand eingeteilt
+            werden müssen, wurde der Dienstplaner entwickelt. Dabei kann jeder Mitarbeiter selber in einem Formular
+            ausfüllen, wann sich nicht Zeit haben zu arbeiten. Der Beauftragte importiert dann alle ausgefüllten
+            Formulare und unternimmt die nötigen Einstellungen zu den Diensten. Anschließend teilt ein Algorithmus die
+            Dienste automatisch fair und ohne persönliche Einflüsse ein. Das Ergebnis kann dann wie gewohnt als PDF
+            heruntergeladen und versendet werden. Zusätzlich können auch für jeden Benutzer die passenden
+            ICS-Kalenderdateien heruntergeladen bzw. direkt per E-Mail an die Mitarbeiter versendet werden. </p>
+        <img src="stoaninger_alm.png" alt="stoaninger_alm.png">
+    </section>
 
+    <section class="description">
+        <h2>Technologien</h2>
+        <div class="technologies">
+            <img src="visual_studio_code.png" alt="Visual Studio Code Icon">
+            <img src="electron.png" alt="Electron Icon">
+            <img src="gitlab.png" alt="GitLab Icon">
+            <img src="typescript-icon.svg" alt="Typescript Icon">
+            <img src="react.png" alt="React Icon">
+        </div>
+        <p style="text-align: center;">VS Code | Electron | GitLab | TypeScript | React</p>
+    </section>
 
-<section class="details">
-    <h2>Weitere Details</h2>
-    <p>Um die Einteilung der Dienste bei der Rodelbahn nicht mehr mühsam und fehleranfällig per Hand eingeteilt werden müssen, wurde der Dienstplaner entwickelt. Dabei kann jeder Mitarbeiter selber in einem Formular ausfüllen, wann sich nicht Zeit haben zu arbeiten. Der Beauftragte importiert dann alle ausgefüllten Formulare und unternimmt die nötigen Einstellungen zu den Diensten. Anschließend teilt ein Algorithmus die Dienste automatisch fair und ohne persönliche Einflüsse ein. Das Ergebnis kann dann wie gewohnt als PDF heruntergeladen und versendet werden. Zusätzlich können auch für jeden Benutzer die passenden ICS-Kalenderdateien heruntergeladen bzw. direkt per E-Mail an die Mitarbeiter versendet werden. </p>
-    <img src="stoaninger_alm.png" alt="stoaninger_alm.png">
-</section>
+    <section class="details">
+        <h2>Team</h2>
+        <img src="Gruppenbild_Ausgeschnitten_Comic.png" alt="Teambild im Comicstyle">
+        <p style="text-align: center;">Moritz Kern | Sebastian Horner</p>
+    </section>
 
-<section class="partners">
-    <h3>Partner & Wichtige Links</h3>
-    <a href="https://www.stoaninger-alm.at/">Stoaninger Alm</a>
-    <a href="https://www.htl-perg.ac.at/">HTL Perg</a>
-    <a href="https://gitlab.htl-perg.ac.at/20200033/dienstplaner">GitLab</a>
-    <a href="#">Dokumentation</a>
-</section>
+    <section class="partners">
+        <h3>Partner & Wichtige Links</h3>
+        <a href="https://www.stoaninger-alm.at/">Stoaninger Alm</a>
+        <a href="https://www.htl-perg.ac.at/">HTL Perg</a>
+        <a href="https://gitlab.htl-perg.ac.at/20200033/dienstplaner">GitLab</a>
+        <a href="#">Dokumentation</a>
+    </section>
 
-<footer>
-    <p>© 2024 Dienstplaner SA. Alle Rechte vorbehalten.</p>
-</footer>
+    <footer>
+        <p>© 2024 Dienstplaner SA. Alle Rechte vorbehalten.</p>
+    </footer>
 
 </body>
+
 </html>
